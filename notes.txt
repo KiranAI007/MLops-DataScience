@@ -1,0 +1,14 @@
+1). The command from flask_cors import CORS, cross_origin is used in Flask applications to enable Cross-Origin Resource Sharing (CORS) 
+support. CORS is a mechanism that allows web browsers to make requests to a web application hosted on a different domain than 
+the one from which the web page was served. This is important for web applications because it enables them to interact with resources 
+from different origins securely.
+
+2). The line app = Flask(__name__) in a Flask application creates an instance of the Flask class, which represents the Flask 
+application itself. __name__: This is a special Python variable that represents the name of the current module. When Python runs a 
+script, it sets the __name__ variable of the script's module to '__main__' if the script is being executed as the main program. 
+If the script is being imported as a module, __name__ is set to the name of the module. By passing __name__ to the Flask constructor, 
+you're telling Flask to use the name of the current module to determine where to look for templates, static files, and other resources.
+
+3). So, when you write app = Flask(__name__), you're creating a new Flask application instance and storing it in the variable app. 
+This instance will be used to configure and run your Flask application. You can then define routes, register blueprints, set 
+configuration options, and more using this app object. It's essentially the heart of your Flask application.
